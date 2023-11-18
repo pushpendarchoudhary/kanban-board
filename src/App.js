@@ -3,14 +3,14 @@ import axios from 'axios';
 
 import './App.css';
 
-import List from './Components/List/List';
-import Navbar from './Components/Navbar/Navbar';
+import DetailBox from './Components/DetailBox/DetailBox';
+import DisplayButton from './Components/DisplayButton/DisplayButton';
 
 function App() {
   const statusList = ['In progress', 'Backlog', 'Todo', 'Done', 'Cancelled']
   const userList = ['Anoop sharma', 'Yogesh', 'Shankar Kumar', 'Ramesh', 'Suresh']
   const priorityList = [{name:'No priority', priority: 0}, {name:'Low', priority: 1}, {name:'Medium', priority: 2}, {name:'High', priority: 3}, {name:'Urgent', priority: 4}]
-
+  
   const [groupValue, setgroupValue] = useState(getStateFromLocalStorage() || 'status')
   const [orderValue, setorderValue] = useState('title')
   const [ticketDetails, setticketDetails] = useState([]);
@@ -86,7 +86,7 @@ function App() {
   
   return (
     <>
-      <Navbar
+      <DisplayButton
         groupValue={groupValue}
         orderValue={orderValue}
         handleGroupValue={handleGroupValue}
@@ -99,7 +99,7 @@ function App() {
               'status' : <>
                 {
                   statusList.map((listItem) => {
-                    return(<List
+                    return(<DetailBox
                       groupValue='status'
                       orderValue={orderValue}
                       listTitle={listItem}
@@ -113,7 +113,7 @@ function App() {
               'user' : <>
               {
                 userList.map((listItem) => {
-                  return(<List
+                  return(<DetailBox
                     groupValue='user'
                     orderValue={orderValue}
                     listTitle={listItem}
@@ -127,7 +127,7 @@ function App() {
               'priority' : <>
               {
                 priorityList.map((listItem) => {
-                  return(<List
+                  return(<DetailBox
                     groupValue='priority'
                     orderValue={orderValue}
                     listTitle={listItem.priority}

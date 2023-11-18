@@ -9,7 +9,7 @@ export default function Card(props) {
             <div className="card-id-wrapper">
                 <div className="card-id">{props.cardDetails.id}</div>
                 <div className="card-profile">
-                    <div className="card-profile-initial">{props.cardDetails.userObj.name[0]}{props.cardDetails.userObj.name[1]}</div>
+                    <div className="card-profile-initial">{props.cardDetails.userObj.name[0]}</div>
                     <div className={props.cardDetails.userObj.available ?"card-profile-initial-available card-profile-initial-available-true" : "card-profile-initial-available"}></div>
                 </div>
             </div>

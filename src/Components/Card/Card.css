@@ -2,9 +2,9 @@
     width: 100%;
     padding: 1rem;
     border-radius: .5rem;
-    border: 1px solid #ccc;
-    box-shadow: 0px 2px 8px 1px #ccc;
-    background-color: var(--white1);
+    border: 3px solid #f8eded;
+    box-shadow: 0px 2px 8px 1px #ba7c7c;
+    background-color: #533747;
     margin-bottom: 1rem;
     cursor: pointer;
 }
@@ -14,7 +14,7 @@
     justify-content: space-between;
 }
 .card-id{
-    color: var(--textgrey);
+    color: #FBFBFF;
     font-size: .95rem;
     font-weight: 500;
 }
@@ -50,7 +50,7 @@
 .card-title{
     font-size: 1rem;
     font-weight: 600;
-    color: var(--black1);
+    color: #F4C095;
 
 }
 .card-tag{
@@ -69,7 +69,7 @@
 
 }
 .card-tag-icon > svg{
-    color: var(--textgrey);
+    color:antiquewhite;
     height: 20px;
 }
 .card-tag-box{
@@ -81,7 +81,7 @@
 .card-tag-title{
     font-size: .85rem;
     font-weight: 500;
-    color: var(--textgrey);
+    color: #C0CAAD ;
 }
 .card-tag-title::before{
     display: inline-block;
@@ -92,3 +92,4 @@
     border-radius: 50%;
     margin-right: .2rem;
 }
+

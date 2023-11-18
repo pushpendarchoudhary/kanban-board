@@ -1,11 +1,11 @@
 import React from 'react'
 
-import './List.css'
+import './DBCss.css'
 import Card from '../Card/Card'
 
 let cardCount = 0;
 
-export default function List(props) {
+export default function DetailBox(props) {
   return (
     <>
         <div className="list-container">

@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import filterIcon from '../../Assets/Images/Tuning.svg'
 import downIcon from '../../Assets/Images/Down.svg'
 
-import './Navbar.css'
+import './DBCss.css'
 
-export default function Navbar(props) {
+export default function DisplayButton(props) {
     const [toggleFilter, settoggleFilter] = useState(false);
 
     function handleDisplayToggle(e){
